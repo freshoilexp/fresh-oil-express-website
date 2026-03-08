@@ -23,7 +23,7 @@ const Hero = () => (
           <span className="text-primary">Your Driveway.</span>
         </h1>
         <p className="text-lg sm:text-xl text-primary-foreground/60 max-w-lg mb-8">
-          Professional mobile oil changes in Baton Rouge. We come to you — at home, at work, wherever your car is parked.
+          Professional mobile oil changes in Milton, Florida. We come to you — at home, at work, wherever your car is parked.
         </p>
         <div className="flex flex-wrap gap-4 mb-16">
           <Button size="lg" className="font-heading text-lg tracking-wider px-8" asChild>

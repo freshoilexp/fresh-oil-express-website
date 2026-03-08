@@ -13,7 +13,7 @@ const Coverage = () => (
             <span className="font-heading text-primary text-lg">BTR</span>
           </div>
           <div className="absolute bottom-8 left-1/2 -translate-x-1/2 text-xs text-foreground/40 font-heading tracking-widest">
-            BATON ROUGE METRO
+            MILTON, FL AREA
           </div>
         </div>
 
@@ -23,10 +23,10 @@ const Coverage = () => (
             Coverage <span className="text-primary">Area</span>
           </h2>
           <p className="text-foreground/50 mb-6">
-            We proudly serve the greater Baton Rouge area including Prairieville, Denham Springs, Gonzales, Central, and Zachary. If you're within 20 miles of downtown, we've got you covered.
-          </p>
-          <div className="space-y-3">
-            {["Baton Rouge", "Prairieville", "Denham Springs", "Gonzales", "Central", "Zachary"].map((area) => (
+             We proudly serve the greater Milton, Florida area including Pace, Navarre, Gulf Breeze, Pensacola, and Crestview. If you're within 20 miles, we've got you covered.
+           </p>
+           <div className="space-y-3">
+             {["Milton", "Pace", "Navarre", "Gulf Breeze", "Pensacola", "Crestview"].map((area) => (
               <div key={area} className="flex items-center gap-3">
                 <div className="w-2 h-2 rounded-full bg-primary" />
                 <span className="text-sm text-foreground/70">{area}</span>
