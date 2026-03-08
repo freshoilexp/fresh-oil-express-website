@@ -4,20 +4,21 @@ import { Button } from "@/components/ui/button";
 const plans = [
   {
     name: "Conventional",
-    price: 49,
+    price: 105,
     features: ["Up to 5 quarts conventional oil", "New oil filter", "Fluid top-off", "Tire pressure check", "21-point inspection"],
     featured: false,
   },
   {
-    name: "Synthetic Blend",
-    price: 69,
-    features: ["Up to 5 quarts synthetic blend", "Premium oil filter", "Fluid top-off", "Tire pressure check", "21-point inspection", "Exterior wipe-down"],
+    name: "Full Synthetic",
+    price: 125,
+    features: ["Up to 5 quarts full synthetic", "Premium oil filter", "All fluids topped", "Tire pressure check", "21-point inspection", "Exterior wipe-down", "Air filter check"],
     featured: true,
   },
   {
-    name: "Full Synthetic",
-    price: 89,
-    features: ["Up to 5 quarts full synthetic", "Premium oil filter", "All fluids topped", "Tire pressure check", "21-point inspection", "Exterior wipe-down", "Air filter check"],
+    name: "Diesel Oil Change",
+    price: null,
+    priceLabel: "From $145",
+    features: ["Up to 10 quarts of oil", "Conventional starting at $145", "Synthetic starting at $165", "Premium oil filter", "All fluids topped", "Tire pressure check", "21-point inspection"],
     featured: false,
   },
 ];
