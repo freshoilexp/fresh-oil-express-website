@@ -168,9 +168,11 @@ const Scheduler = () => {
                 </button>
               </DialogTrigger>
               <DialogContent className="max-w-3xl h-[80vh] bg-foreground border-border">
-                <div className="flex items-center justify-center h-full text-muted-foreground">
-                  <p>Droptop booking portal iframe placeholder</p>
-                </div>
+                <iframe
+                  src="https://droptop-scheduler.com/rdDIZZK2rUaG2HMeUT11O5dwGFg9yC9s9IwubayO/U3DpAjla38"
+                  className="w-full h-full rounded-md"
+                  title="Droptop Booking Portal"
+                />
               </DialogContent>
             </Dialog>
           </div>
