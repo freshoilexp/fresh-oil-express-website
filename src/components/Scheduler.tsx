@@ -86,9 +86,10 @@ const Scheduler = () => {
                 <SelectValue placeholder="Select Service" />
               </SelectTrigger>
               <SelectContent>
-                <SelectItem value="conventional">Conventional — $49</SelectItem>
-                <SelectItem value="blend">Synthetic Blend — $69</SelectItem>
-                <SelectItem value="synthetic">Full Synthetic — $89</SelectItem>
+                <SelectItem value="conventional">Conventional — $105</SelectItem>
+                <SelectItem value="synthetic">Full Synthetic — $125</SelectItem>
+                <SelectItem value="diesel-conv">Diesel Conventional — $145</SelectItem>
+                <SelectItem value="diesel-synth">Diesel Synthetic — $165</SelectItem>
               </SelectContent>
             </Select>
 
