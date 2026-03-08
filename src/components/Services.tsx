@@ -49,8 +49,10 @@ const Services = () => (
             )}
             <h3 className="font-heading text-2xl text-primary-foreground">{p.name}</h3>
             <div className="flex items-baseline gap-1 my-4">
-              <span className="text-4xl font-heading text-primary">${p.price}</span>
-              <span className="text-primary-foreground/40 text-sm">/service</span>
+              <span className="text-4xl font-heading text-primary">
+                {p.price ? `$${p.price}` : (p as any).priceLabel}
+              </span>
+              {p.price && <span className="text-primary-foreground/40 text-sm">/service</span>}
             </div>
             <ul className="space-y-3 mb-6">
               {p.features.map((f) => (
