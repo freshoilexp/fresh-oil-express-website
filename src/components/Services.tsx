@@ -12,7 +12,7 @@ const plans = [
   {
     name: "Full Synthetic",
     price: 125,
-    features: ["Up to 5 quarts full synthetic", "Premium oil filter", "All fluids topped", "Tire pressure check", "21-point inspection", "Exterior wipe-down", "Air filter check"],
+    features: ["Up to 5 quarts full synthetic", "Premium oil filter", "All fluids topped", "Tire pressure check", "21-point inspection", "Air filter check"],
     featured: true,
   },
   {
