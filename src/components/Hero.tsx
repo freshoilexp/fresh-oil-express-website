@@ -40,7 +40,7 @@ const Hero = () => (
               </Button>
             }
           />
-          <Button size="lg" variant="outline" className="font-heading text-lg tracking-wider px-8 border-primary-foreground/20 text-primary-foreground hover:bg-primary-foreground/10" asChild>
+          <Button size="lg" variant="outline" className="font-heading text-lg tracking-wider px-8 border-primary text-primary hover:bg-primary hover:text-primary-foreground" asChild>
             <a href="#services">View Pricing</a>
           </Button>
         </div>
