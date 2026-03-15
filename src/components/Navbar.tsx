@@ -42,6 +42,12 @@ const Navbar = () => {
       {/* Mobile menu */}
       {open && (
         <div className="md:hidden bg-foreground border-t border-border px-6 pb-6 pt-2 space-y-4">
+          <a href="tel:8503820148" onClick={() => setOpen(false)} className="flex items-center gap-2 text-primary-foreground/70 hover:text-primary">
+            <Phone size={14} /> (850) 382-0148
+          </a>
+          <a href="mailto:freshoilexp@gmail.com" onClick={() => setOpen(false)} className="flex items-center gap-2 text-primary-foreground/70 hover:text-primary">
+            <Mail size={14} /> freshoilexp@gmail.com
+          </a>
           <a href="#services" onClick={() => setOpen(false)} className="block text-primary-foreground/70 hover:text-primary">Services</a>
           <a href="#coverage" onClick={() => setOpen(false)} className="block text-primary-foreground/70 hover:text-primary">Coverage</a>
           <BookingDialog
