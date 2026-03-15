@@ -27,9 +27,13 @@ const Hero = () => (
           Professional mobile oil changes in Milton, Florida. We come to you — at home, at work, wherever your car is parked.
         </p>
         <div className="flex flex-wrap gap-4 mb-16">
-          <Button size="lg" className="font-heading text-lg tracking-wider px-8" asChild>
-            <a href="#scheduler">Book Now <ChevronRight className="ml-1 h-5 w-5" /></a>
-          </Button>
+          <BookingDialog
+            trigger={
+              <Button size="lg" className="font-heading text-lg tracking-wider px-8">
+                Book Now <ChevronRight className="ml-1 h-5 w-5" />
+              </Button>
+            }
+          />
           <Button size="lg" variant="outline" className="font-heading text-lg tracking-wider px-8 border-primary-foreground/20 text-primary-foreground hover:bg-primary-foreground/10" asChild>
             <a href="#services">View Pricing</a>
           </Button>

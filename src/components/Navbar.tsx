@@ -36,11 +36,14 @@ const Navbar = () => {
       {open && (
         <div className="md:hidden bg-foreground border-t border-border px-6 pb-6 pt-2 space-y-4">
           <a href="#services" onClick={() => setOpen(false)} className="block text-primary-foreground/70 hover:text-primary">Services</a>
-          <a href="#scheduler" onClick={() => setOpen(false)} className="block text-primary-foreground/70 hover:text-primary">Book Now</a>
           <a href="#coverage" onClick={() => setOpen(false)} className="block text-primary-foreground/70 hover:text-primary">Coverage</a>
-          <Button className="w-full font-heading text-base tracking-wider" asChild>
-            <a href="#scheduler" onClick={() => setOpen(false)}>Schedule</a>
-          </Button>
+          <BookingDialog
+            trigger={
+              <Button className="w-full font-heading text-base tracking-wider">
+                Schedule
+              </Button>
+            }
+          />
         </div>
       )}
     </nav>
