@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import BookingDialog from "@/components/BookingDialog";
+import logo from "@/assets/logo.jpg";
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
@@ -9,8 +10,8 @@ const Navbar = () => {
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-foreground/95 backdrop-blur-sm border-b border-border">
       <div className="container flex items-center justify-between h-16">
-        <a href="#" className="font-heading text-2xl text-primary-foreground tracking-widest">
-          FRESH OIL <span className="text-primary">EXPRESS</span>
+        <a href="#" className="flex items-center">
+          <img src={logo} alt="Fresh Oil Express" className="h-12" />
         </a>
 
         {/* Desktop */}
