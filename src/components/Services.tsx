@@ -19,7 +19,7 @@ const plans = [
     name: "Diesel Oil Change",
     price: null,
     priceLabel: "From $145",
-    features: ["Up to 10 quarts of oil", "Conventional starting at $145", "Synthetic starting at $165", "Premium oil filter", "All fluids topped", "Tire pressure check", "21-point inspection"],
+    features: ["Up to 10 quarts of oil", "Conventional starting at $145", "Synthetic starting at $165", "Premium oil filter", "Fluid top-off", "Tire pressure check", "21-point inspection"],
     featured: false,
   },
 ];
