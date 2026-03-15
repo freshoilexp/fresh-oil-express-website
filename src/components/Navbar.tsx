@@ -16,11 +16,14 @@ const Navbar = () => {
         {/* Desktop */}
         <div className="hidden md:flex items-center gap-8">
           <a href="#services" className="text-sm text-primary-foreground/70 hover:text-primary transition-colors">Services</a>
-          <a href="#scheduler" className="text-sm text-primary-foreground/70 hover:text-primary transition-colors">Book Now</a>
           <a href="#coverage" className="text-sm text-primary-foreground/70 hover:text-primary transition-colors">Coverage</a>
-          <Button size="sm" className="font-heading text-base tracking-wider px-6" asChild>
-            <a href="#scheduler">Schedule</a>
-          </Button>
+          <BookingDialog
+            trigger={
+              <Button size="sm" className="font-heading text-base tracking-wider px-6">
+                Schedule
+              </Button>
+            }
+          />
         </div>
 
         {/* Mobile toggle */}
