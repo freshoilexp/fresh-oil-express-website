@@ -1,5 +1,6 @@
 import { Check } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import BookingDialog from "@/components/BookingDialog";
 
 const plans = [
   {
@@ -62,9 +63,13 @@ const Services = () => (
                 </li>
               ))}
             </ul>
-            <Button className={`w-full font-heading tracking-wider ${p.featured ? "" : "bg-primary/10 text-primary hover:bg-primary hover:text-primary-foreground"}`} asChild>
-              <a href="#scheduler">Book Now</a>
-            </Button>
+            <BookingDialog
+              trigger={
+                <Button className={`w-full font-heading tracking-wider ${p.featured ? "" : "bg-primary/10 text-primary hover:bg-primary hover:text-primary-foreground"}`}>
+                  Book Now
+                </Button>
+              }
+            />
           </div>
         ))}
       </div>

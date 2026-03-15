@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import BookingDialog from "@/components/BookingDialog";
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
@@ -15,11 +16,14 @@ const Navbar = () => {
         {/* Desktop */}
         <div className="hidden md:flex items-center gap-8">
           <a href="#services" className="text-sm text-primary-foreground/70 hover:text-primary transition-colors">Services</a>
-          <a href="#scheduler" className="text-sm text-primary-foreground/70 hover:text-primary transition-colors">Book Now</a>
           <a href="#coverage" className="text-sm text-primary-foreground/70 hover:text-primary transition-colors">Coverage</a>
-          <Button size="sm" className="font-heading text-base tracking-wider px-6" asChild>
-            <a href="#scheduler">Schedule</a>
-          </Button>
+          <BookingDialog
+            trigger={
+              <Button size="sm" className="font-heading text-base tracking-wider px-6">
+                Schedule
+              </Button>
+            }
+          />
         </div>
 
         {/* Mobile toggle */}
@@ -32,11 +36,14 @@ const Navbar = () => {
       {open && (
         <div className="md:hidden bg-foreground border-t border-border px-6 pb-6 pt-2 space-y-4">
           <a href="#services" onClick={() => setOpen(false)} className="block text-primary-foreground/70 hover:text-primary">Services</a>
-          <a href="#scheduler" onClick={() => setOpen(false)} className="block text-primary-foreground/70 hover:text-primary">Book Now</a>
           <a href="#coverage" onClick={() => setOpen(false)} className="block text-primary-foreground/70 hover:text-primary">Coverage</a>
-          <Button className="w-full font-heading text-base tracking-wider" asChild>
-            <a href="#scheduler" onClick={() => setOpen(false)}>Schedule</a>
-          </Button>
+          <BookingDialog
+            trigger={
+              <Button className="w-full font-heading text-base tracking-wider">
+                Schedule
+              </Button>
+            }
+          />
         </div>
       )}
     </nav>
