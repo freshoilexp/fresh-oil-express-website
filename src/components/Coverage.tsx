@@ -26,7 +26,7 @@ const Coverage = () => (
              We proudly serve the greater Milton, Florida area including Pace, Navarre, Gulf Breeze, and Pensacola. If you're within 20 miles, we've got you covered.
            </p>
            <div className="space-y-3">
-             {["Milton", "Pace", "Navarre", "Gulf Breeze", "Pensacola", "Crestview"].map((area) => (
+             {["Milton", "Pace", "Navarre", "Gulf Breeze", "Pensacola"].map((area) => (
               <div key={area} className="flex items-center gap-3">
                 <div className="w-2 h-2 rounded-full bg-primary" />
                 <span className="text-sm text-foreground/70">{area}</span>
