@@ -12,14 +12,14 @@ const plans = [
   {
     name: "Full Synthetic",
     price: 125,
-    features: ["Up to 5 quarts full synthetic", "Premium oil filter", "All fluids topped", "Tire pressure check", "21-point inspection", "Air filter check"],
+    features: ["Up to 5 quarts full synthetic", "Premium oil filter", "Fluid top-off", "Tire pressure check", "21-point inspection", "Air filter check"],
     featured: true,
   },
   {
     name: "Diesel Oil Change",
     price: null,
     priceLabel: "From $145",
-    features: ["Up to 10 quarts of oil", "Conventional starting at $145", "Synthetic starting at $165", "Premium oil filter", "All fluids topped", "Tire pressure check", "21-point inspection"],
+    features: ["Up to 10 quarts of oil", "Conventional starting at $145", "Synthetic starting at $165", "Premium oil filter", "Fluid top-off", "Tire pressure check", "21-point inspection"],
     featured: false,
   },
 ];
