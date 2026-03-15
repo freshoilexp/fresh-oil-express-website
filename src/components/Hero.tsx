@@ -14,6 +14,11 @@ const Hero = () => (
     {/* Red glow */}
     <div className="absolute top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[400px] rounded-full red-glow pointer-events-none" />
 
+    {/* Background logo */}
+    <div className="absolute right-0 top-1/2 -translate-y-1/2 opacity-[0.07] pointer-events-none">
+      <img src={logo} alt="" className="w-[600px] lg:w-[800px]" />
+    </div>
+
     {/* Oil drip lines */}
     <div className="absolute left-[20%] top-0 h-full w-px bg-gradient-to-b from-transparent via-primary/20 to-transparent oil-drip" />
     <div className="absolute right-[30%] top-0 h-full w-px bg-gradient-to-b from-transparent via-primary/10 to-transparent" />
