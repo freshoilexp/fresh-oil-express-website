@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ChevronRight } from "lucide-react";
+import BookingDialog from "@/components/BookingDialog";
 
 const stats = [
   { value: "30", label: "Min Service" },
