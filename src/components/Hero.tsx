@@ -15,8 +15,8 @@ const Hero = () => (
     <div className="absolute top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[400px] rounded-full red-glow pointer-events-none" />
 
     {/* Background logo */}
-    <div className="absolute right-0 bottom-[-250px] sm:bottom-[-150px] opacity-[0.40] pointer-events-none">
-      <img src={logo} alt="" className="w-[400px] lg:w-[800px]" />
+    <div className="absolute right-0 bottom-[-150px] opacity-[0.40] pointer-events-none">
+      <img src={logo} alt="" className="w-[600px] lg:w-[800px]" />
     </div>
 
     {/* Oil drip lines */}
@@ -45,7 +45,7 @@ const Hero = () => (
           </Button>
         </div>
 
-        <div className="flex gap-8 sm:gap-12 relative z-10">
+        <div className="flex gap-8 sm:gap-12">
           {stats.map((s) => (
             <div key={s.label} className="text-center">
               <div className="text-3xl sm:text-4xl font-heading text-primary">{s.value}</div>
