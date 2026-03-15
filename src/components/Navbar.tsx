@@ -15,7 +15,13 @@ const Navbar = () => {
         </a>
 
         {/* Desktop */}
-        <div className="hidden md:flex items-center gap-8">
+        <div className="hidden md:flex items-center gap-6">
+          <a href="tel:8503820148" className="flex items-center gap-1.5 text-sm text-primary-foreground/70 hover:text-primary transition-colors">
+            <Phone size={14} /> (850) 382-0148
+          </a>
+          <a href="mailto:freshoilexp@gmail.com" className="flex items-center gap-1.5 text-sm text-primary-foreground/70 hover:text-primary transition-colors">
+            <Mail size={14} /> freshoilexp@gmail.com
+          </a>
           <a href="#services" className="text-sm text-primary-foreground/70 hover:text-primary transition-colors">Services</a>
           <a href="#coverage" className="text-sm text-primary-foreground/70 hover:text-primary transition-colors">Coverage</a>
           <BookingDialog
