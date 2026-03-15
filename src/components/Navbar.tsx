@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Menu, X } from "lucide-react";
+import { Menu, X, Phone, Mail } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import BookingDialog from "@/components/BookingDialog";
 import logo from "@/assets/logo.png";
@@ -15,7 +15,13 @@ const Navbar = () => {
         </a>
 
         {/* Desktop */}
-        <div className="hidden md:flex items-center gap-8">
+        <div className="hidden md:flex items-center gap-6">
+          <a href="tel:8503820148" className="flex items-center gap-1.5 text-sm text-primary-foreground/70 hover:text-primary transition-colors">
+            <Phone size={14} /> (850) 382-0148
+          </a>
+          <a href="mailto:freshoilexp@gmail.com" className="flex items-center gap-1.5 text-sm text-primary-foreground/70 hover:text-primary transition-colors">
+            <Mail size={14} /> freshoilexp@gmail.com
+          </a>
           <a href="#services" className="text-sm text-primary-foreground/70 hover:text-primary transition-colors">Services</a>
           <a href="#coverage" className="text-sm text-primary-foreground/70 hover:text-primary transition-colors">Coverage</a>
           <BookingDialog
@@ -36,6 +42,12 @@ const Navbar = () => {
       {/* Mobile menu */}
       {open && (
         <div className="md:hidden bg-foreground border-t border-border px-6 pb-6 pt-2 space-y-4">
+          <a href="tel:8503820148" onClick={() => setOpen(false)} className="flex items-center gap-2 text-primary-foreground/70 hover:text-primary">
+            <Phone size={14} /> (850) 382-0148
+          </a>
+          <a href="mailto:freshoilexp@gmail.com" onClick={() => setOpen(false)} className="flex items-center gap-2 text-primary-foreground/70 hover:text-primary">
+            <Mail size={14} /> freshoilexp@gmail.com
+          </a>
           <a href="#services" onClick={() => setOpen(false)} className="block text-primary-foreground/70 hover:text-primary">Services</a>
           <a href="#coverage" onClick={() => setOpen(false)} className="block text-primary-foreground/70 hover:text-primary">Coverage</a>
           <BookingDialog
