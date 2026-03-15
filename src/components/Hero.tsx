@@ -45,7 +45,7 @@ const Hero = () => (
           </Button>
         </div>
 
-        <div className="flex gap-8 sm:gap-12">
+        <div className="flex gap-8 sm:gap-12 relative z-10">
           {stats.map((s) => (
             <div key={s.label} className="text-center">
               <div className="text-3xl sm:text-4xl font-heading text-primary">{s.value}</div>
