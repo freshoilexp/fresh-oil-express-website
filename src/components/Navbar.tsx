@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import BookingDialog from "@/components/BookingDialog";
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
