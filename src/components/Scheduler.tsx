@@ -1,53 +1,8 @@
-import { useState } from "react";
 import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Shield, Clock, Star } from "lucide-react";
-import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
-
-const generateDays = () => {
-  const today = new Date();
-  const days: { date: Date; disabled: boolean }[] = [];
-  // Show current month grid
-  const year = today.getFullYear();
-  const month = today.getMonth();
-  const firstDay = new Date(year, month, 1);
-  const startPad = firstDay.getDay();
-  
-  for (let i = 0; i < startPad; i++) {
-    days.push({ date: new Date(year, month, -(startPad - 1 - i)), disabled: true });
-  }
-  
-  const daysInMonth = new Date(year, month + 1, 0).getDate();
-  for (let d = 1; d <= daysInMonth; d++) {
-    const date = new Date(year, month, d);
-    const isPast = date < new Date(year, today.getMonth(), today.getDate());
-    const isSunday = date.getDay() === 0;
-    days.push({ date, disabled: isPast || isSunday });
-  }
-  return days;
-};
-
-const timeSlots = [
-  { time: "8:00 AM", booked: false },
-  { time: "9:00 AM", booked: false },
-  { time: "10:00 AM", booked: true },
-  { time: "11:00 AM", booked: false },
-  { time: "12:00 PM", booked: false },
-  { time: "1:00 PM", booked: true },
-  { time: "2:00 PM", booked: false },
-  { time: "3:00 PM", booked: false },
-  { time: "4:00 PM", booked: false },
-  { time: "5:00 PM", booked: true },
-];
-
-const monthNames = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+import BookingDialog from "@/components/BookingDialog";
 
 const Scheduler = () => {
-  const [selectedDate, setSelectedDate] = useState<number | null>(null);
-  const [selectedTime, setSelectedTime] = useState<string | null>(null);
-  const days = generateDays();
-  const today = new Date();
 
   return (
     <section id="scheduler" className="py-20 bg-foreground">
