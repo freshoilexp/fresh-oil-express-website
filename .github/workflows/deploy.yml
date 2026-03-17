@@ -17,8 +17,8 @@ jobs:
 
       - name: Install and Build
         run: |
-          npm install
-          npm run build
+          npm ci
+          npx vite build
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
