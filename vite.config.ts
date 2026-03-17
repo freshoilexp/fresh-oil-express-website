@@ -3,11 +3,9 @@ import react from "@vitejs/plugin-react-swc";
 import path from "path";
 import { componentTagger } from "lovable-tagger";
 
-// https://vitejs.dev/config/
-export default {
+export default defineConfig(({ mode }) => ({
   base: '/fresh-oil-express-website/',
-  // ... rest of config
-}  server: {
+  server: {
     host: "::",
     port: 8080,
     hmr: {
