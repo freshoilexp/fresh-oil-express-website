@@ -4,7 +4,7 @@ import HowItWorks from "@/components/HowItWorks";
 import Services from "@/components/Services";
 import Scheduler from "@/components/Scheduler";
 import Coverage from "@/components/Coverage";
-import Testimonials from "@/components/Testimonials";
+import Reviews from "@/components/Reviews";
 import Footer from "@/components/Footer";
 
 const Index = () => (
@@ -15,7 +15,7 @@ const Index = () => (
     <Services />
     <Scheduler />
     <Coverage />
-    <Testimonials />
+    <Reviews />
     <Footer />
   </>
 );
