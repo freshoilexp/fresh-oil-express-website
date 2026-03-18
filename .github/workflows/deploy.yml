@@ -18,10 +18,11 @@ jobs:
         with:
           node-version: 20
 
-      - name: Install and Build
+      - name: Install, Build, and Deploy
         run: |
           npm install
           npx vite build
+          ls -la dist
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
