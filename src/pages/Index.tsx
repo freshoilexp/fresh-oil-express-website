@@ -15,7 +15,7 @@ const Index = () => (
     <Services />
     <Scheduler />
     <Coverage />
-    <Testimonials />
+    <Reviews />
     <Footer />
   </>
 );
