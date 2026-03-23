@@ -21,7 +21,7 @@ const Scheduler = () => {
           <div className="flex flex-wrap gap-4 justify-center mb-8">
             {[
               { icon: Shield, label: "Insured & Certified" },
-              { icon: Clock, label: "30-Min Average" },
+              { icon: Clock, label: "1-Hour Average" },
               { icon: Star, label: "5-Star Rated" },
             ].map((b) => (
               <div key={b.label} className="flex items-center gap-2 bg-card rounded-md px-4 py-2 border border-border">
