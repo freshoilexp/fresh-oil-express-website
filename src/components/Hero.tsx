@@ -4,7 +4,7 @@ import BookingDialog from "@/components/BookingDialog";
 import logo from "@/assets/logo.png";
 
 const stats = [
-  { value: "30", label: "Min Service" },
+  { value: "1 Hr", label: "Service" },
   { value: "5★", label: "Rated" },
   { value: "0", label: "Waiting Rooms" },
 ];
